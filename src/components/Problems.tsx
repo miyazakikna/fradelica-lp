@@ -23,8 +23,9 @@ const problems = [
 
 export default function Problems() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-20 bg-warm-beige relative overflow-hidden">
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,10 +33,13 @@ export default function Problems() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal-900 mb-6">
             こんなお悩み、
             <span className="gradient-text">ありませんか？</span>
           </h2>
+          <p className="text-xl text-charcoal-600 font-light">
+            香りを楽しみたい気持ちはあるけれど...
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -46,15 +50,15 @@ export default function Problems() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300"
+              className="glass-effect p-8 rounded-2xl hover:shadow-luxury transition-all duration-500 group"
             >
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                <problem.icon className="w-8 h-8 text-red-600" />
+              <div className="w-16 h-16 bg-gradient-to-br from-sage-100 to-sage-200 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <problem.icon className="w-8 h-8 text-sage-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
+              <h3 className="text-xl font-semibold text-charcoal-900 mb-4 leading-tight font-serif">
                 {problem.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-charcoal-600 leading-relaxed font-light">
                 {problem.description}
               </p>
             </motion.div>
