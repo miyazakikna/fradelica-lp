@@ -5,7 +5,7 @@ import { Gift, Clock } from 'lucide-react'
 
 export default function Campaign() {
   return (
-    <section className="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-gray-800 to-gray-900 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-32 h-32 bg-white/20 rounded-full blur-3xl animate-float"></div>
@@ -29,7 +29,7 @@ export default function Campaign() {
             <span className="block text-6xl md:text-7xl">無料！</span>
           </h2>
 
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             通常500円の容器代が今なら無料。<br />
             この機会にぜひお試しください。
           </p>
@@ -37,13 +37,13 @@ export default function Campaign() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 bg-white text-orange-600 px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <Gift className="w-6 h-6" />
             キャンペーンを利用する
           </motion.div>
 
-          <p className="text-white/80 text-sm mt-6">
+          <p className="text-gray-400 text-sm mt-6">
             ※キャンペーンは予告なく終了する場合があります
           </p>
         </motion.div>

@@ -48,10 +48,10 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="group text-center p-8 rounded-2xl hover:bg-primary-50 transition-all duration-300"
+              className="group text-center p-8 rounded-2xl hover:bg-gray-50 transition-all duration-300"
             >
-              <div className="w-20 h-20 bg-primary-100 group-hover:bg-primary-200 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
-                <feature.icon className="w-10 h-10 text-primary-600" />
+              <div className="w-20 h-20 bg-gray-100 group-hover:bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
+                <feature.icon className="w-10 h-10 text-gray-700" />
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                 {feature.title}

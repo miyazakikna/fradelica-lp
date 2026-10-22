@@ -50,11 +50,11 @@ export default function Testimonials() {
               viewport={{ once: true }}
               className="bg-gray-50 p-8 rounded-2xl relative"
             >
-              <Quote className="w-8 h-8 text-primary-300 mb-4" />
-              
+              <Quote className="w-8 h-8 text-gray-400 mb-4" />
+
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-gray-800 fill-current" />
                 ))}
               </div>
 
